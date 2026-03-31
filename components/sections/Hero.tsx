@@ -24,16 +24,18 @@ export default function Hero() {
       </div>
 
       {/* Video Background */}
-      <div className="absolute inset-0">
-        <iframe
-          src="https://www.youtube.com/embed/tOma-dkY5r4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1"
-          // https://youtu.be/tOma-dkY5r4?si=Uk2-VFyaCaqywx9b
-          className="absolute inset-0 w-full h-full"
-          allow="autoplay; mute"
-          style={{ border: "none", objectFit: "cover" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/50 via-onyx-950/50 to-onyx-950/50" />
-      </div>
+<div className="absolute inset-0 overflow-hidden">
+  <div className="absolute top-1/2 left-1/2 w-[300.78vh] h-[100vh] -translate-x-1/2 -translate-y-1/2">
+    <iframe
+      src="https://www.youtube.com/embed/tOma-dkY5r4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=tOma-dkY5r4"
+      className="w-full h-full"
+      allow="autoplay; fullscreen"
+      style={{ border: "none" }}
+    />
+  </div>
+
+  <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/50 via-onyx-950/50 to-onyx-950/50" />
+</div>
 
       <div className="container-custom relative z-10 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
