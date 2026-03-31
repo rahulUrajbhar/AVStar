@@ -30,7 +30,7 @@ export default function Hero() {
           // https://youtu.be/tOma-dkY5r4?si=Uk2-VFyaCaqywx9b
           className="absolute inset-0 w-full h-full"
           allow="autoplay; mute"
-          style={{ border: "none" }}
+          style={{ border: "none", objectFit: "cover" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/50 via-onyx-950/50 to-onyx-950/50" />
       </div>

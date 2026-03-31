@@ -31,8 +31,8 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
-            : "bg-background/40 backdrop-blur-sm"
+            ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-[0_4px_30px_rgba(0,0,0,0.3)] light:bg-white"
+            : "bg-background/40 backdrop-blur-sm light:bg-white/80"
         )}
         style={{ height: "var(--nav-height)" }}
       >
@@ -150,7 +150,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/98 backdrop-blur-xl"
+            className="fixed inset-0 z-40 bg-background backdrop-blur-xl"
             style={{ paddingTop: "var(--nav-height)" }}
           >
             <div className="container-custom py-8 flex flex-col gap-2 h-full overflow-y-auto">
